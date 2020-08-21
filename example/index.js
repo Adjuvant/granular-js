@@ -57,7 +57,7 @@ async function init() {
   granular.on('bufferSet', () => console.log('buffer set'));
   granular.on('grainCreated', () => console.log('grain created'));
 
-  const data = await getData('creed.mp3');
+  const data = await getData('example.wav');
 
   await granular.setBuffer(data);
 
